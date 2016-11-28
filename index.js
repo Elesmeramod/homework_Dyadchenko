@@ -8,10 +8,10 @@ function Task1() {
     }
     var endInit = new Date() * 1000;
     console.log("Исходный массив");
+    console.log(array);
     console.log({
         "startInit": startInit,
         "endInit": endInit,
-        "arr": array,
         "result": endInit - startInit
     });
     var arraySortUp = array.slice();
@@ -24,30 +24,30 @@ function Task1() {
     }
     var endSum = new Date() * 1000;
     console.log("Сумма массива");
+    console.log(sum);
     console.log({
         "startSum": startSum,
         "endSum": endSum,
-        "sum": sum,
         "result": endSum - startSum
     });
     var startSortUp = new Date() * 1000;
     QsortUp(arraySortUp, first, last);
     var endSortUp = new Date() * 1000;
     console.log("Сортировка по возрастанию");
+    console.log(arraySortUp);
     console.log({
         "startSortUp": startSortUp,
         "endSortUp": endSortUp,
-        "arraySortUp": arraySortUp,
         "result": endSortUp - startSortUp
     });
     var startSortDown = new Date() * 1000;
     QsortDown(arraySortDown, first, last);
     var endSortDown = new Date() * 1000;
     console.log("Сортировка по убыванию");
+    console.log(arraySortDown);
     console.log({
         "startSortDown": startSortDown,
         "endSortDown": endSortDown,
-        "arraySortDown": arraySortDown,
         "result": endSortDown - startSortDown
     });
 }
