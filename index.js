@@ -13,9 +13,7 @@ function Task1() {
         "startInit": startInit,
         "endInit": endInit,
         "result": endInit - startInit
-    });
-    var arraySortUp = array.slice();
-    var arraySortDown = array.slice();
+    });;
     var first = 0;
     var last = n - 1;
     var startSum = new Date() * 1000;
@@ -31,20 +29,20 @@ function Task1() {
         "result": endSum - startSum
     });
     var startSortUp = new Date() * 1000;
-    QsortUp(arraySortUp, first, last);
+    QsortUp(array, first, last);
     var endSortUp = new Date() * 1000;
     console.log("Сортировка по возрастанию");
-    console.log(arraySortUp);
+    console.log(array);
     console.log({
         "startSortUp": startSortUp,
         "endSortUp": endSortUp,
         "result": endSortUp - startSortUp
     });
     var startSortDown = new Date() * 1000;
-    QsortDown(arraySortDown, first, last);
+    QsortDown(array, first, last);
     var endSortDown = new Date() * 1000;
     console.log("Сортировка по убыванию");
-    console.log(arraySortDown);
+    console.log(array);
     console.log({
         "startSortDown": startSortDown,
         "endSortDown": endSortDown,
