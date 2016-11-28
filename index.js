@@ -92,6 +92,7 @@ function QsortDown(array, first, last) {
     if (f < last) QsortDown(array, f, last);
 }
 function Task2(){
+    console.log("Транспортная задача");
     var matrixA=[60,80,100];
     var matrixB=[40,60,80,60];
     var matrixC=[[1,4,3,2],[4,5,8,3],[2,3,6,7]];
