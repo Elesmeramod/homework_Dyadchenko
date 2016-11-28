@@ -7,6 +7,7 @@ function Task1() {
         array.push(Math.floor(Math.random() * (1000 + 1)));
     }
     var endInit = new Date() * 1000;
+    console.log("Исходный массив");
     console.log({
         "startInit": startInit,
         "endInit": endInit,
@@ -22,6 +23,7 @@ function Task1() {
         sum += array[i];
     }
     var endSum = new Date() * 1000;
+    console.log("Сумма массива");
     console.log({
         "startSum": startSum,
         "endSum": endSum,
@@ -31,6 +33,7 @@ function Task1() {
     var startSortUp = new Date() * 1000;
     QsortUp(arraySortUp, first, last);
     var endSortUp = new Date() * 1000;
+    console.log("Сортировка по возрастанию");
     console.log({
         "startSortUp": startSortUp,
         "endSortUp": endSortUp,
@@ -40,6 +43,7 @@ function Task1() {
     var startSortDown = new Date() * 1000;
     QsortDown(arraySortDown, first, last);
     var endSortDown = new Date() * 1000;
+    console.log("Сортировка по убыванию");
     console.log({
         "startSortDown": startSortDown,
         "endSortDown": endSortDown,
